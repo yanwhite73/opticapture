@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "drum_source": {
+    "name": "Drum Rack",
+    "requires_content": true
+  },
+  "native_instruments": [
+    {"name": "Operator"},
+    {"name": "Analog"},
+    {"name": "Wavetable"},
+    {"name": "Drift"},
+    {"name": "Collision"},
+    {"name": "Electric"},
+    {"name": "Tension"},
+    {"name": "Meld"}
+  ],
+  "sample_hosts": [
+    {"name": "Simpler", "requires_content": true},
+    {"name": "Sampler", "requires_content": true}
+  ],
+  "m4l_instruments": [
+    {"name": "Poli", "requires_content": true, "excluded_presets": ["Woodlog Model.adv"]},
+    {"name": "Bass", "requires_content": true}
+  ],
+  "native_effects": [
+    {"name": "Reverb", "family": "reverb"},
+    {"name": "Delay", "family": "delay"},
+    {"name": "Chorus-Ensemble", "family": "modulation"},
+    {"name": "Auto Filter", "family": "filter"},
+    {"name": "Saturator", "family": "drive"},
+    {"name": "Phaser-Flanger", "family": "modulation"},
+    {"name": "Redux", "family": "drive"},
+    {"name": "Erosion", "family": "drive"},
+    {"name": "EQ Eight", "family": "filter"},
+    {"name": "Overdrive", "family": "drive"},
+    {"name": "Grain Delay", "family": "delay"},
+    {"name": "Roar", "family": "drive"},
+    {"name": "Hybrid Reverb", "family": "reverb"},
+    {"name": "Echo", "family": "delay"},
+    {"name": "Corpus", "family": "modulation"},
+    {"name": "Shifter", "family": "pitch"},
+    {"name": "Auto Pan-Tremolo", "family": "modulation"},
+    {"name": "Drum Buss", "family": "drive"},
+    {"name": "Auto Shift", "family": "pitch"},
+    {"name": "Pedal", "family": "drive"},
+    {"name": "Filter Delay", "family": "delay"},
+    {"name": "Beat Repeat", "family": "delay"},
+    {"name": "Amp", "family": "drive"},
+    {"name": "Resonators", "family": "modulation"},
+    {"name": "Cabinet", "family": "drive"},
+    {"name": "Vocoder", "family": "pitch"},
+    {"name": "Vinyl Distortion", "family": "drive"},
+    {"name": "Spectral Resonator", "family": "pitch"},
+    {"name": "Spectral Time", "family": "pitch"},
+    {"name": "Dynamic Tube", "family": "drive"},
+    {"name": "Compressor", "family": "dynamics"},
+    {"name": "Limiter", "family": "dynamics"}
+  ],
+  "m4l_effects": [
+    {"name": "PitchLoop89", "family": "pitch"},
+    {"name": "Pitch Hack", "family": "pitch"},
+    {"name": "Re-Enveloper", "family": "modulation"},
+    {"name": "Spectral Blur", "family": "pitch"},
+    {"name": "Gated Delay", "family": "delay"},
+    {"name": "Vector Delay", "family": "delay"},
+    {"name": "Plate Reverb", "family": "reverb"},
+    {"name": "Snipper", "family": "modulation"},
+    {"name": "Convolution Reverb", "family": "reverb", "requires_preset": true},
+    {"name": "Convolution Reverb Pro", "family": "reverb", "requires_preset": true}
+  ]
+}

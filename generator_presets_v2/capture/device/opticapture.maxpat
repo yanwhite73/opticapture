@@ -1,0 +1,1219 @@
+{
+  "patcher": {
+    "fileversion": 1,
+    "appversion": {
+      "major": 8,
+      "minor": 1,
+      "revision": 2,
+      "architecture": "x64",
+      "modernui": 1
+    },
+    "classnamespace": "box",
+    "rect": [
+      0,
+      0,
+      900,
+      650
+    ],
+    "openrect": [
+      0.0,
+      0.0,
+      0.0,
+      169.0
+    ],
+    "bglocked": 0,
+    "openinpresentation": 1,
+    "default_fontsize": 10.0,
+    "default_fontface": 0,
+    "default_fontname": "Arial Bold",
+    "gridonopen": 1,
+    "gridsize": [
+      8.0,
+      8.0
+    ],
+    "gridsnaponopen": 1,
+    "objectsnaponopen": 1,
+    "statusbarvisible": 2,
+    "toolbarvisible": 1,
+    "lefttoolbarpinned": 0,
+    "toptoolbarpinned": 0,
+    "righttoolbarpinned": 0,
+    "bottomtoolbarpinned": 0,
+    "toolbars_unpinned_last_save": 0,
+    "tallnewobj": 0,
+    "boxanimatetime": 500,
+    "enablehscroll": 1,
+    "enablevscroll": 1,
+    "devicewidth": 400.0,
+    "description": "opticapture \u2014 Keep Take, Keep Scene, Find Source",
+    "digest": "",
+    "tags": "",
+    "style": "",
+    "subpatcher_template": "",
+    "boxes": [
+      {
+        "box": {
+          "fontname": "Arial Bold",
+          "fontsize": 10.0,
+          "id": "obj-2",
+          "maxclass": "newobj",
+          "numinlets": 2,
+          "numoutlets": 2,
+          "outlettype": [
+            "signal",
+            "signal"
+          ],
+          "patching_rect": [
+            48.0,
+            114.0,
+            53.0,
+            20.0
+          ],
+          "text": "plugout~"
+        }
+      },
+      {
+        "box": {
+          "fontname": "Arial Bold",
+          "fontsize": 10.0,
+          "id": "obj-1",
+          "maxclass": "newobj",
+          "numinlets": 2,
+          "numoutlets": 2,
+          "outlettype": [
+            "signal",
+            "signal"
+          ],
+          "patching_rect": [
+            48.0,
+            34.0,
+            53.0,
+            20.0
+          ],
+          "text": "plugin~"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-title",
+          "varname": "title",
+          "maxclass": "live.comment",
+          "patching_rect": [
+            10,
+            7,
+            275,
+            18
+          ],
+          "numinlets": 1,
+          "numoutlets": 0,
+          "text": "opticapture",
+          "presentation": 1,
+          "presentation_rect": [
+            10,
+            7,
+            275,
+            18
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 10.0,
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-version",
+          "varname": "version",
+          "maxclass": "live.comment",
+          "patching_rect": [
+            338,
+            7,
+            52,
+            18
+          ],
+          "numinlets": 1,
+          "numoutlets": 0,
+          "text": "dev.51",
+          "presentation": 1,
+          "presentation_rect": [
+            338,
+            7,
+            52,
+            18
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 10.0,
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-clip_label",
+          "varname": "clip_label",
+          "maxclass": "live.comment",
+          "patching_rect": [
+            10,
+            30,
+            380,
+            17
+          ],
+          "numinlets": 1,
+          "numoutlets": 0,
+          "text": "Take: select an audio clip",
+          "presentation": 1,
+          "presentation_rect": [
+            10,
+            30,
+            380,
+            17
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 10.0,
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-scene_label",
+          "varname": "scene_label",
+          "maxclass": "live.comment",
+          "patching_rect": [
+            10,
+            49,
+            380,
+            17
+          ],
+          "numinlets": 1,
+          "numoutlets": 0,
+          "text": "Scene: select a scene",
+          "presentation": 1,
+          "presentation_rect": [
+            10,
+            49,
+            380,
+            17
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 10.0,
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-keep",
+          "varname": "keep",
+          "maxclass": "live.text",
+          "patching_rect": [
+            10,
+            73,
+            122,
+            27
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "text": "Keep Take",
+          "texton": "Keep Take",
+          "mode": 0,
+          "parameter_enable": 0,
+          "parameter_mappable": 0,
+          "active": 0,
+          "presentation": 1,
+          "presentation_rect": [
+            10,
+            73,
+            122,
+            27
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 11.0,
+          "annotation": "Name the displayed audio clip and file together; retain its full source Set.",
+          "appearance": 0,
+          "bgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "activebgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "bgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "activebgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "textoffcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextoncolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "outlettype": [
+            "bang",
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-keep_message",
+          "varname": "keep_message",
+          "maxclass": "message",
+          "patching_rect": [
+            10,
+            220,
+            115,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "action keep"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-scene",
+          "varname": "scene",
+          "maxclass": "live.text",
+          "patching_rect": [
+            139,
+            73,
+            122,
+            27
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "text": "Keep Scene",
+          "texton": "Keep Scene",
+          "mode": 0,
+          "parameter_enable": 0,
+          "parameter_mappable": 0,
+          "active": 0,
+          "presentation": 1,
+          "presentation_rect": [
+            139,
+            73,
+            122,
+            27
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 11.0,
+          "annotation": "Keep the audio clips in the displayed scene, with their full source Set.",
+          "appearance": 0,
+          "bgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "activebgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "bgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "activebgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "textoffcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextoncolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "outlettype": [
+            "bang",
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-scene_message",
+          "varname": "scene_message",
+          "maxclass": "message",
+          "patching_rect": [
+            268,
+            220,
+            115,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "action scene"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-find",
+          "varname": "find",
+          "maxclass": "live.text",
+          "patching_rect": [
+            268,
+            73,
+            122,
+            27
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "text": "Find Source",
+          "texton": "Find Source",
+          "mode": 0,
+          "parameter_enable": 0,
+          "parameter_mappable": 0,
+          "active": 0,
+          "presentation": 1,
+          "presentation_rect": [
+            268,
+            73,
+            122,
+            27
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 11.0,
+          "annotation": "Reveal the displayed take's linked source Set in Finder.",
+          "appearance": 0,
+          "bgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "activebgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "bgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "activebgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "textoffcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextoncolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "outlettype": [
+            "bang",
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-find_message",
+          "varname": "find_message",
+          "maxclass": "message",
+          "patching_rect": [
+            526,
+            220,
+            115,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "action find"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-current_setup",
+          "varname": "current_setup",
+          "maxclass": "live.text",
+          "patching_rect": [
+            10,
+            106,
+            144,
+            18
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "text": "Use current setup: Off",
+          "texton": "Use current setup: Off",
+          "mode": 0,
+          "active": 0,
+          "parameter_enable": 0,
+          "parameter_mappable": 0,
+          "presentation": 1,
+          "presentation_rect": [
+            10,
+            106,
+            144,
+            18
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 9.0,
+          "annotation": "For older recordings only: explicitly associate the setup loaded now. Enable only when it is the correct source. Resets after each action or target change.",
+          "appearance": 0,
+          "bgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "activebgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "bgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "activebgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "textoffcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextoncolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "outlettype": [
+            "bang",
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-current_message",
+          "varname": "current_message",
+          "maxclass": "message",
+          "patching_rect": [
+            10,
+            260,
+            150,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "toggle_current"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-setup_hint",
+          "varname": "setup_hint",
+          "maxclass": "live.comment",
+          "patching_rect": [
+            165,
+            106,
+            225,
+            18
+          ],
+          "numinlets": 1,
+          "numoutlets": 0,
+          "text": "for older recordings",
+          "presentation": 1,
+          "presentation_rect": [
+            165,
+            106,
+            225,
+            18
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 10.0,
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-status",
+          "varname": "status",
+          "maxclass": "live.comment",
+          "patching_rect": [
+            10,
+            130,
+            309,
+            34
+          ],
+          "numinlets": 1,
+          "numoutlets": 0,
+          "text": "Connecting to Live\u2026",
+          "presentation": 1,
+          "presentation_rect": [
+            10,
+            130,
+            309,
+            34
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 10.0,
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "linecount": 2
+        }
+      },
+      {
+        "box": {
+          "id": "cap-details",
+          "varname": "details",
+          "maxclass": "live.text",
+          "patching_rect": [
+            330,
+            135,
+            60,
+            20
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "text": "Details",
+          "texton": "Details",
+          "mode": 0,
+          "parameter_enable": 0,
+          "active": 0,
+          "presentation": 1,
+          "presentation_rect": [
+            330,
+            135,
+            60,
+            20
+          ],
+          "fontname": "Ableton Sans Medium",
+          "fontsize": 9.0,
+          "annotation": "Open the full last result, including source and recovery paths.",
+          "appearance": 0,
+          "bgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "activebgcolor": [
+            0.65,
+            0.63,
+            0.6,
+            1.0
+          ],
+          "bgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "activebgoncolor": [
+            1.0,
+            0.737255,
+            0.0,
+            1.0
+          ],
+          "textoffcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "textcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextcolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "activetextoncolor": [
+            0.12,
+            0.11,
+            0.08,
+            1.0
+          ],
+          "outlettype": [
+            "bang",
+            ""
+          ]
+        }
+      },
+      {
+        "box": {
+          "id": "cap-details_message",
+          "varname": "details_message",
+          "maxclass": "message",
+          "patching_rect": [
+            430,
+            260,
+            80,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "details"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-ui",
+          "varname": "ui",
+          "maxclass": "newobj",
+          "patching_rect": [
+            330,
+            350,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "js optimystery_capture_ui.js"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-node",
+          "varname": "node",
+          "maxclass": "newobj",
+          "patching_rect": [
+            330,
+            410,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 2,
+          "text": "node.script optimystery_capture_node.js @autostart 0 @watch 0 @restart 0 @defer 1"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-lifecycle",
+          "varname": "lifecycle",
+          "maxclass": "newobj",
+          "patching_rect": [
+            330,
+            450,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "prepend lifecycle"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-thisdevice",
+          "varname": "thisdevice",
+          "maxclass": "newobj",
+          "patching_rect": [
+            10,
+            320,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 3,
+          "text": "live.thisdevice"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-defer_init",
+          "varname": "defer_init",
+          "maxclass": "newobj",
+          "patching_rect": [
+            10,
+            350,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "deferlow"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-init_message",
+          "varname": "init_message",
+          "maxclass": "message",
+          "patching_rect": [
+            10,
+            380,
+            60,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "init"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-context_message",
+          "varname": "context_message",
+          "maxclass": "newobj",
+          "patching_rect": [
+            10,
+            420,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "prepend context"
+        }
+      },
+      {
+        "box": {
+          "id": "cap-defer_context",
+          "varname": "defer_context",
+          "maxclass": "newobj",
+          "patching_rect": [
+            10,
+            450,
+            270,
+            22
+          ],
+          "numinlets": 1,
+          "numoutlets": 1,
+          "text": "deferlow"
+        }
+      }
+    ],
+    "lines": [
+      {
+        "patchline": {
+          "destination": [
+            "obj-2",
+            1
+          ],
+          "source": [
+            "obj-1",
+            1
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "destination": [
+            "obj-2",
+            0
+          ],
+          "source": [
+            "obj-1",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-keep",
+            0
+          ],
+          "destination": [
+            "cap-keep_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-keep_message",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-scene",
+            0
+          ],
+          "destination": [
+            "cap-scene_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-scene_message",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-find",
+            0
+          ],
+          "destination": [
+            "cap-find_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-find_message",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-current_setup",
+            0
+          ],
+          "destination": [
+            "cap-current_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-current_message",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-details",
+            0
+          ],
+          "destination": [
+            "cap-details_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-details_message",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-ui",
+            0
+          ],
+          "destination": [
+            "cap-node",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-node",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-node",
+            1
+          ],
+          "destination": [
+            "cap-lifecycle",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-lifecycle",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-thisdevice",
+            0
+          ],
+          "destination": [
+            "cap-defer_init",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-defer_init",
+            0
+          ],
+          "destination": [
+            "cap-init_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-init_message",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-thisdevice",
+            2
+          ],
+          "destination": [
+            "cap-context_message",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-context_message",
+            0
+          ],
+          "destination": [
+            "cap-defer_context",
+            0
+          ]
+        }
+      },
+      {
+        "patchline": {
+          "source": [
+            "cap-defer_context",
+            0
+          ],
+          "destination": [
+            "cap-ui",
+            0
+          ]
+        }
+      }
+    ],
+    "dependency_cache": [
+      {
+        "name": "optimystery_capture_node.js",
+        "type": "TEXT",
+        "implicit": 1
+      },
+      {
+        "name": "optimystery_capture_ui.js",
+        "type": "TEXT",
+        "implicit": 1
+      }
+    ],
+    "latency": 0,
+    "project": {
+      "version": 1,
+      "creationdate": 3590052493,
+      "modificationdate": 3590052493,
+      "viewrect": [
+        0.0,
+        0.0,
+        300.0,
+        500.0
+      ],
+      "autoorganize": 0,
+      "hideprojectwindow": 1,
+      "showdependencies": 1,
+      "autolocalize": 0,
+      "contents": {
+        "patchers": {}
+      },
+      "layout": {},
+      "searchpath": {},
+      "detailsvisible": 0,
+      "amxdtype": 1633771873,
+      "readonly": 0,
+      "devpathtype": 0,
+      "devpath": ".",
+      "sortmode": 0,
+      "viewmode": 0
+    },
+    "autosave": 0
+  }
+}

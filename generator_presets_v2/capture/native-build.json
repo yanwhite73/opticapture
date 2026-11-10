@@ -1,0 +1,5 @@
+{
+  "target": "arm64-apple-macos13.0",
+  "source_sha256": "121207532898294de0c4083b5bdd9c6639961876a4255e856eba1ddd4cb76663",
+  "binary_sha256": "849df46ab5f72eec09189ba1ea47c83ea123959df0edd9c9f967b5a937aab5c8"
+}

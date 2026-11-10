@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.backup
+.venv/
+node_modules/
+dist/
+build/
+.tmp/
+*.log
+# Local projects, recordings, runtime mailboxes and indexes are never source.
+*.als
+*.wav
+*.aif
+*.aiff
+*.asd
+Bridge/
+Logs/
+Optimystery Takes/
+Optimystery History/
+index.json
+command.lock
